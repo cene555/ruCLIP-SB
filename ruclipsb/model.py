@@ -7,7 +7,7 @@ import torch.nn.functional as F
 from torch import nn
 from transformers import BertModel
 
-class ruCLIP(nn.Module):
+class ruCLIPSB(nn.Module):
     def __init__(self,):
         super().__init__()
         self.visual = swin = create_swin(
