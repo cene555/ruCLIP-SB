@@ -1,5 +1,3 @@
-from collections import OrderedDict
-from typing import Tuple, Union
 from timm import create_model as create_swin
 import numpy as np
 import torch
