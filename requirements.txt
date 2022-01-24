@@ -1,0 +1,3 @@
+torch
+timm
+transformers==4.12.3
