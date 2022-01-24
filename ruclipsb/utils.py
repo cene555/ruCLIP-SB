@@ -1,5 +1,6 @@
 import torch
 
+
 def tokenize(tokenizer, texts, max_len=77):
     input_ids = []
     attention_masks = []
@@ -9,7 +10,7 @@ def tokenize(tokenizer, texts, max_len=77):
                             truncation=True,
                             add_special_tokens = True,
                             max_length = max_len,
-                            pad_to_max_length = True,
+                            padding='max_length',
                             return_attention_mask = True,
                             return_tensors = 'pt', 
                       )
@@ -18,3 +19,7 @@ def tokenize(tokenizer, texts, max_len=77):
     input_ids = torch.cat(input_ids, dim=0)
     attention_masks = torch.cat(attention_masks, dim=0)
     return input_ids, attention_masks
+
+
+def _convert_image_to_rgb(image):
+    return image.convert("RGB")
