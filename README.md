@@ -3,3 +3,5 @@ RuCLIP-SB (Russian Contrastive Language–Image Pretraining SWIN-BERT) is a mult
 ![image](https://github.com/cene555/ruCLIP-SB/blob/main/pictures/Similarity.png)
 
 We achieved 37.02% zero-shot accuracy on CIFAR100.
+
+We train model on 2 million images.
