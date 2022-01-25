@@ -8,4 +8,4 @@ We train model on 2 million images on Google Colab.
 ![image](https://github.com/cene555/ruCLIP-SB/blob/main/pictures/Similarity.png)
 
 
-### Thanks to Sber AI and https://t.me/lovedeathtransformers for help.
+### Thanks to Sber AI for help.
