@@ -2,7 +2,7 @@ import cv2
 from torch.utils.data import Dataset
 from torchvision import transforms
 import transformers
-from .utils import _convert_image_to_rgb
+from .utils import _convert_image_to_rgb, tokenize
 import pandas as pd
 import os
 from PIL import Image
