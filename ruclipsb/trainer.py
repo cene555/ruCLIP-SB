@@ -1,8 +1,9 @@
 import torch
 from transformers import get_linear_schedule_with_warmup
 from tqdm.auto import tqdm
-from .model import build_model
 from .dataset import RuCLIPSBDataset
+
+
 class Trainer:
     def __init__(self, train_dataframe, train_dir,
                  val_dataframe=None, val_dir=None, learning_rate=1e-4,
