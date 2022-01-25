@@ -2,9 +2,15 @@ import cv2
 from torch.utils.data import Dataset
 from torchvision import transforms
 import transformers
+from .utils import _convert_image_to_rgb
 import pandas as pd
 import os
-
+from PIL import Image
+try:
+    from torchvision.transforms import InterpolationMode
+    BICUBIC = InterpolationMode.BICUBIC
+except ImportError:
+    BICUBIC = Image.BICUBIC
 
 class RuCLIPSBDataset(Dataset):
     def __init__(self, dir, df_path, max_text_len=77):
